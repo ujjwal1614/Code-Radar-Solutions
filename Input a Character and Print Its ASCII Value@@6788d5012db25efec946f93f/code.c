@@ -2,7 +2,8 @@
 
 int main() {
     char u;
-    scanf("%d", u);
+    scanf("%c", &u);
+
     printf("%d", u);
     return 0;
 }
