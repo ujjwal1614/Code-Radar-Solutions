@@ -3,7 +3,11 @@
 int main() {
     int a ,b ,c;
     scnaf("%d %d %d", &a &b &c);
-    if((a*a) + (b*b) == (c*c)){
+    int add;
+    add = (a*a) + (b*b); 
+    int third;
+    third = (c*c);
+    if(add == third){
         printf("Valid");
     }
     else{
