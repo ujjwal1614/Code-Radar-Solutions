@@ -10,7 +10,7 @@ int main() {
         printf("Negative");
     }
     else if(a == 0){
-        prin tf("Zero")
+        prin tf("Zero");
     }
     return 0;
 }7
