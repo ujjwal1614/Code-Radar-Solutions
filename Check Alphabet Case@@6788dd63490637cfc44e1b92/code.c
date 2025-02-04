@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    char c;
-    scanf("%c", &c);
-    value = ("%d", c);
-    printf("%d", value);
+    char character;
+    scanf("%c", &character);
+    if(97 <= character <= 122){
+            printf("Uppercase");
+    }
+    else if(65 <= character <= 90){
+        printf("Lowercase");
+    }
     return 0;
 }
