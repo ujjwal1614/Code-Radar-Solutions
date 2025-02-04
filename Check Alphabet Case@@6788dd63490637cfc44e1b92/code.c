@@ -4,10 +4,10 @@ int main() {
     char character;
     scanf("%c", &character);
     if(97 <= character && character <= 122){
-            printf("Uppercase");
+            printf("Lowercase");
     }
     else if(65 <= character && character <= 90){
-        printf("Lowercase");
+        printf("Uppercase");
     }
     return 0;
 }
