@@ -11,7 +11,7 @@ int main() {
         printf("Uppercase");
     }
     else{
-        printf("Not a character");
+        printf("Not an alphabet");
     }
     
     return 0;
