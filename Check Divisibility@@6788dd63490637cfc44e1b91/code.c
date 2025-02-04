@@ -12,7 +12,7 @@ int main() {
         }
     }
     else{
-        printf("Non Divisible");
+        printf("Not Divisible");
     }
     return 0;
 }
