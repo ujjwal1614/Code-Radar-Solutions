@@ -4,7 +4,7 @@ int main() {
     int a, b;
     int add = a + b;
     scanf("%d %d", &a, &b);
-    if(a > 0 && b > 0){ 
+    if(a != b){ 
         printf("%d", add);
     }
     else{
