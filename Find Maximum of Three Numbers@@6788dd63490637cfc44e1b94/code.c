@@ -10,6 +10,7 @@ int main() {
         else if(c > a){
             printf("%d", c);
         }
+    }
     else if(b > a){
         if(b > c){
             printf("%d", b);
@@ -18,6 +19,11 @@ int main() {
             printf("%d", c);
         }
     }
+    else if(a == b && b == c){
+        printf("%d", a);
+    }
+    else{
+        printf("%d", a);
     }
     return 0;
 ;
