@@ -22,9 +22,13 @@ int main() {
     else if(a == b && b == c){
         printf("%d", a);
     }
-    else{
-        printf("%d", a);
+    else if(a == b){
+        if(a < c){
+            printf("%d", c);
+        }
+        else{
+            printf("%d", a);
+        }
     }
     return 0;
-;
 }
