@@ -20,7 +20,7 @@ int main() {
     }
     else if(c == '/'){
         if(b != 0){
-            devide = a/b;
+            devide = float(a)/float(b);
             printf("%d\n", devide);
         }
         else{
