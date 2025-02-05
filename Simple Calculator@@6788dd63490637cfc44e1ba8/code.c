@@ -10,5 +10,19 @@ int main() {
         result = a+b;
         printf("%d\n", result);
     }
+    else if(c == '-'){
+        result = a-b;
+        printf("%d\n", result);
+    }
+    else if(c == '*'){
+        result = a*b;
+        printf("%d\n", result);
+    }
+    else if(c == '/'){
+        if(b != 0){
+            devide = a/b;
+            printf("%d\n", devide);
+        }
+    }
     return 0;
 }
