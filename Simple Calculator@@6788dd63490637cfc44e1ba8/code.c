@@ -5,7 +5,6 @@ int main() {
     char c;
     scanf("%d %d %c", &a, &b, &c);
     int result;
-    float devide;
     if(c == '+'){
         result = a+b;
         printf("%d\n", result);
@@ -20,8 +19,8 @@ int main() {
     }
     else if(c == '/'){
         if(b != 0){
-            devide = a/b;
-            printf("%d\n", devide);
+            result = a/b;
+            printf("%d\n", result);
         }
         else{
             printf("error");
