@@ -24,7 +24,7 @@ int main() {
             printf("%d\n", devide);
         }
         else{
-            printf("error")
+            printf("error");
         }
     }
     return 0;
