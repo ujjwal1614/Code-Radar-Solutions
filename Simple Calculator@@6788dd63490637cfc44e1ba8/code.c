@@ -23,6 +23,9 @@ int main() {
             devide = a/b;
             printf("%d\n", devide);
         }
+        else{
+            printf("error")
+        }
     }
     return 0;
 }
