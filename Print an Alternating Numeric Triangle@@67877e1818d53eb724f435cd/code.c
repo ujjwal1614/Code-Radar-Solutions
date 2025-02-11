@@ -5,11 +5,21 @@ int main() {
     scanf("%d", &n);
     for(int i=0; i<n; i++){
         for(int j=n-i; j<=n; j++){
+            if(n % 2 != 0){
             if(j % 2 != 0){
             printf("1 ");
             }
             else{
                 printf("0 ");
+            }
+            }
+            else{
+            if(j % 2 == 0){
+            printf("1 ");
+            }
+            else{
+                printf("0 ");
+            }
             }
         }
         printf("\n");
