@@ -11,7 +11,7 @@ int main() {
                 if(k<=i){
                     printf("%d", k+1);
                 }
-                if(k<i){
+                else if(k<i){
                     printf("%d", k+1);
                 }
         }
