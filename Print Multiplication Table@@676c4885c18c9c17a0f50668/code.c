@@ -6,16 +6,16 @@ int main() {
     if(n>0){
     for(int i =0; i<n ; i++){
         printf("%d", n);
-        printf("x %d", i+1);
+        printf(" x %d", i+1);
         m = n*(i+1);
-        printf(" = %d", m);
+        printf(" = %d\n", m);
     }}
     else{
     for(int i =0; i>n ; i--){
         printf("%d", n);
         printf("x %d", i+1);
         m = n*(i+1);
-        printf(" = %d", m);
+        printf(" = %d\n", m);
     }}
     return 0;
 }
