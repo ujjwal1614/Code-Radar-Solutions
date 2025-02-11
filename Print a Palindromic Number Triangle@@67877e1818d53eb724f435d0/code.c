@@ -12,7 +12,7 @@ int main() {
         }
         for(int l = (n-i); l<n; l++){
             int r;
-            r = n-l+1;
+            r = n-l;
             printf("%d", r);
         }
         printf("\n");
