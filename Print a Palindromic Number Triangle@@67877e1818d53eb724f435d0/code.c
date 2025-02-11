@@ -8,13 +8,12 @@ int main() {
             printf(" ");
         }
         for(int k =0; k<(2*i+1); k++){
-            // for(int m = 0; m<=k; m++){
-                if(k<=i)
-                printf("%d", k+1);
-            // }
-            // for(int l = (n-i); l<n; l--){
-            //     printf("%d", l-1);
-            // }
+                if(k<=i){
+                    printf("%d", k+1);
+                }
+                if(k<i){
+                    printf("%d", k+1);
+                }
         }
         printf("\n");
     }
