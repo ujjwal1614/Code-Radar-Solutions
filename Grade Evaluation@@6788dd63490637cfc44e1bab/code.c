@@ -16,5 +16,5 @@ int main() {
     else if(c == 'F'){
         printf("Fail");
     }
-    return =0;
+    return 0;
 }
