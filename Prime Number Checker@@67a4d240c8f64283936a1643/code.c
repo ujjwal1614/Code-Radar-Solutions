@@ -8,7 +8,7 @@ int isPrime(int a){
     }
         for(int u = 2; u<a; u++)
         {
-            if(a % u == 0)
+            if(a % u != 0)
             {
                 return 1;
             }
