@@ -1,18 +1,21 @@
 #include<stdio.h>
-int isprime(int);
-int isprime(int a);
+int isprime(int a){
     int a;
     int k;
     scanf("%d", &a);
+    if(a<=1)
+    {
+        return 0;
+    }
         for(int u = 2; u<a; u++)
         {
-            if(j % u == 0)
+            if(a % u == 0)
             {
-                printf("1");
+                return 1;
             }
             else
             {
-                printf("0");
+                return 0;
             }
         }
 int main()
