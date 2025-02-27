@@ -1,6 +1,5 @@
 #include<stdio.h>
 int isprime(int a){
-    int a;
     int k;
     scanf("%d", &a);
     if(a<=1)
