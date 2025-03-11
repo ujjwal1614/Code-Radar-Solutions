@@ -2,7 +2,7 @@
 void rotate(int st[], int n, int r, int myarr[])
 {
 for(int i = 0; i<n; i++){
-    if(i<n-r-1)
+    if(i<r)
     {
         myarr[i] = st[n-r+i];
     }
