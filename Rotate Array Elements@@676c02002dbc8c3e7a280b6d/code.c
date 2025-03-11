@@ -16,12 +16,12 @@ int main()
 int n, r;
 int myarr[]= {};
 scanf("%d", &n);
-scanf("%d", &r);
 int st[] = {};
 for(int i = 0; i<n; i++)
 {
     scanf("%d", &st[i]);
 }
+scanf("%d", &r);
 rotate(st, n, r, myarr);
 for(int i = 0; i<n; i++)
 {
