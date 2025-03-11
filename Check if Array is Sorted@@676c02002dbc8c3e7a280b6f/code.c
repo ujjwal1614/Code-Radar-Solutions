@@ -1,5 +1,6 @@
 #include<stdio.h>
-int main(){
+int main()
+{
     int n;
     int myarr[n];
     scanf("%d", &n);
@@ -19,6 +20,5 @@ int main(){
         }
         printf("Sorted");
     }
-    
     return 0;
 }
