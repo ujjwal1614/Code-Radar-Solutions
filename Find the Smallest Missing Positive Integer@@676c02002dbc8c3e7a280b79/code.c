@@ -21,6 +21,7 @@ int main(){
         if(arr[i]> 0){
             if(arr[i] != arr[i+1] + 1){
                 printf("%d", arr[i+1] + 1);
+                return 0;
             }
         }
     }
