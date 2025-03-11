@@ -14,9 +14,9 @@ for(int i = 0; i<n; i++){
 int main()
 {
 int n, r;
-int myarr[]= {};
+int myarr[n];
 scanf("%d", &n);
-int st[] = {};
+int st[n];
 for(int i = 0; i<n; i++)
 {
     scanf("%d", &st[i]);
