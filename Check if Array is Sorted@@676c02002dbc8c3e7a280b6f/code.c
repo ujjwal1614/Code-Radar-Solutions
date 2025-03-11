@@ -2,8 +2,8 @@
 int main()
 {
     int n;
-    int myarr[n];
     scanf("%d", &n);
+    int myarr[n];
     for(int i=0; i<n; i++)
     {
         scanf("%d", &myarr[i]);
