@@ -26,6 +26,6 @@ for(int i = 0; i<n; i++)
     scanf("%d", &st[i]);
 }
 scanf("%d", &r);
-rotate(st, n, r, myarr);
+rotate(st, n, r);
 return 0;
 }
