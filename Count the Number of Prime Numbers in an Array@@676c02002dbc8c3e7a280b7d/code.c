@@ -8,13 +8,17 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i = 0; i<n; i++){
-        for(int j = 0; j<arr[i]; j++){
-            if(arr[i] % j == 0){
-                printf("0");
-                return 0;
-            }
-        }
-        num += 1;
+        printf("%d", &arr[i]);
     }
-    printf("5d", num);
+
+    // for(int i = 0; i<n; i++){
+    //     for(int j = 0; j<arr[i]; j++){
+    //         if(arr[i] % j == 0){
+    //             printf("0");
+    //             return 0;
+    //         }
+    //     }
+    //     num += 1;
+    // }
+    // printf("5d", num);
 }
