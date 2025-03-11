@@ -25,7 +25,7 @@ int main(){
         count += 1;
     }
     }
-    if(count == 1){
+    if(count > 0){
     for(int i = 0; i<n; i++)
     {
         if(arr[i] > 0)
