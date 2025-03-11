@@ -16,6 +16,6 @@ int main(){
         }
         num += 1;
     }
-    printf("5d", num);
+    printf("%d", num);
     return 0;
 }
