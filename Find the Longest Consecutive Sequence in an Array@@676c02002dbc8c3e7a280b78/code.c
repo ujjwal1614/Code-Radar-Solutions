@@ -24,6 +24,7 @@ int main(){
         //     printf("%d\n", arr[i+1]);
             // num += 1;
             printf("%d ", arr[i]);
+            printf("%d\n", arr[i+1]);
         }
     // }
     // printf("%d", num);
