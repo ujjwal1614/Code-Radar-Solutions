@@ -25,7 +25,7 @@ int main(){
             // num += 1;
             printf("%d ", arr[i]);
             printf("%d\n", arr[i+1] - 1);
-            if(arr[i] = arr[i+1] - 1){
+            if(arr[i+1] - arr[i] == 1){
                 num += 1;
             }
         }
