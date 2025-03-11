@@ -18,7 +18,8 @@ int main()
                 return 0;
             }
         }
-        printf("Sorted");
+        
     }
+    printf("Sorted");
     return 0;
 }
