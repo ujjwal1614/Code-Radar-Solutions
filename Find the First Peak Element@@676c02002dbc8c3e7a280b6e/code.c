@@ -12,6 +12,10 @@ int main(){
             return 0;
         }
     }
+    if(myarr[n-1] > myarr[n-2]){
+        printf("%d", myarr[n-1]);
+        return 0;
+    }
     printf("-1");
-    
+    return 0;
 }
