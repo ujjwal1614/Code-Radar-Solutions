@@ -1,7 +1,7 @@
 #include<stdio.h>
 void rotate(int st[], int n, int r, int myarr[])
 {
-for(int i = 0; i<r; i++){
+for(int i = 0; i<n; i++){
     if(i<n-r-1)
     {
         myarr[i] = st[n-r+i];
