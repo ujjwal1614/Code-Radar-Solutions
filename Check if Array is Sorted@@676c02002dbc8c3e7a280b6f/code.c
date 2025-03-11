@@ -6,7 +6,19 @@ int main(){
     for(int i=0; i<n; i++)
     {
         scanf("%d", &myarr[i]);
-        printf("%d", myarr[i]);
     }
+    for(int i=0; i<n-1; i++)
+    {
+        for(int j = 1; j<n; j++)
+        {
+            if(myarr[i] > myarr[j])
+            {
+                printf("Not Sorted");
+                return 0;
+            }
+        }
+        printf("Sorted");
+    }
+    
     return 0;
 }
