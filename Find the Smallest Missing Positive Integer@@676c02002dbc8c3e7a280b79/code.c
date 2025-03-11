@@ -17,13 +17,27 @@ int main(){
             }
         }
     }
-    for(int i = 0; i<n; i++){
-        if(arr[i]> 0){
-            if(arr[i] != arr[i+1] - 1){
-                printf("%d", arr[i+1]);
+    for(int j = 0; j<n-1; j++)
+    {
+    if(arr[j] == 1)
+    {
+    for(int i = 0; i<n; i++)
+    {
+        if(arr[i] > 0)
+        {
+            if(arr[i+1] != arr[i] + 1)
+            {
+                printf("%d", arr[i] + 1);
                 return 0;
+            
             }
         }
+    }
+    }
+    else{
+        printf("1");
+        return 0;
+    }
     }
     printf("1");
     return 0;
