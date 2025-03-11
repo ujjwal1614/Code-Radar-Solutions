@@ -27,4 +27,5 @@ for(int i = 0; i<n; i++)
 {
     printf("%d\n", myarr[i]);
 }
+return 0;
 }
