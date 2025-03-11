@@ -8,7 +8,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i = 0; i<n; i++){
-        printf("%d", &arr[i]);
+        printf("%d\n", &arr[i]);
     }
 
     // for(int i = 0; i<n; i++){
@@ -21,4 +21,5 @@ int main(){
     //     num += 1;
     // }
     // printf("5d", num);
+    return 0;
 }
