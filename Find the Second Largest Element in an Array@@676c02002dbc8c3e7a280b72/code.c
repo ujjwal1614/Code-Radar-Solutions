@@ -14,6 +14,16 @@ int main(){
             arr[i+1] = ujjwal;
         } 
     }
-    printf("%d", arr[n-2]);
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n; j++){
+            if(arr[i] != arr[j]){
+                printf("%d", arr[n-2]);
+            }
+            else{
+                printf("-1");
+            }
+        }
+    }
+    
     return 0;
 }
