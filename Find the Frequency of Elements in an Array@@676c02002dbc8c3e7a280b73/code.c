@@ -8,12 +8,14 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int ujjwal;
+    int fame[n];
+    int skilly = 1;
     for(int i = 0; i < n-1; i++){
+        fame[i] = arr[i];
         for(int j = i+1; j<n; j++){
             if(arr[i] == arr[j]){
-                ujjwal = arr[i];
-                arr[i] = arr[j];
-                arr[j] = ujjwal;
+                fame[skilly] = arr[j];
+                i = j;
             }
         }
     }
