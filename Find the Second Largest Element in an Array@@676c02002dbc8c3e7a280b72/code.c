@@ -26,6 +26,7 @@ int main(){
         }
         if(count == n){
             printf("-1");
+            return 0;
         }
         else if(arr[i]>0){
         printf("%d ", arr[n-2]);
