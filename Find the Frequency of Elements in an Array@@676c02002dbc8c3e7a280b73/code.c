@@ -27,7 +27,7 @@ int main(){
     int arr2[num];
     int arr3[num];
     arr2[0] = 1;
-    int maa = 0;
+    int maa = 1;
     int vanshu = 0;
     arr3[0] = arr[0];
     for(int i =0; i<n; i++){
