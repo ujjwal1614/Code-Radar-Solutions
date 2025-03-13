@@ -20,7 +20,5 @@ int main(){
         printf("%d ", arr[n-2]);}
         else{
         printf("%d ", arr[1]);}    
-    }
-    
     return 0;
 }
