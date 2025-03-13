@@ -38,6 +38,6 @@ int main(){
     printf("%d", a);
     // for(int i = 0; i<a; i++){
     //     printf("%d", num[i]);
-    }
+    // }
     return 0;
 }
