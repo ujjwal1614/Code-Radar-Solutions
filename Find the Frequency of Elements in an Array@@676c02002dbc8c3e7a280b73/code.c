@@ -1,50 +1,60 @@
 #include<stdio.h>
 
-int main() {
+int main(){
     int n;
     scanf("%d", &n);
     int arr[n];
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i< n ; i++){
         scanf("%d", &arr[i]);
     }
-
-    // Count frequency of each number in arr
-    int fame[n]; // To store the frequency
-    for (int i = 0; i < n; i++) {
-        fame[i] = 0;  // Initialize frequency array
-    }
-
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] == arr[j]) {
-                fame[i]++;  // Count frequency for repeated numbers
-            }
-        }
-    }
-
-    // Sort the array in descending order based on frequency
-    for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) {
-            if (arr[i] < arr[j]) {
-                // Swap values
-                int temp = arr[i];
+    int ujjwal;
+    for(int i = 0; i < n-1; i++){
+        for(int j = i+1; j<n; j++){
+            if(arr[i] > arr[j]){
+                ujjwal = arr[i];
                 arr[i] = arr[j];
-                arr[j] = temp;
-
-                // Swap frequency values as well to keep the frequency in sync
-                temp = fame[i];
-                fame[i] = fame[j];
-                fame[j] = temp;
+                arr[j] = ujjwal;
             }
         }
     }
-
-    // Now print the array with repeated numbers together
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < fame[i]; j++) {
-            printf("%d ", arr[i]);
+     int num = 1;
+    for(int i = 0; i<n-1; i++)
+    {
+        if(arr[i] != arr[i+1]){
+            num += 1;
         }
     }
-
+    int arr2[num];
+    int arr3[num];
+    arr2[0] = 1;
+    int maa = 1;
+    int vanshu = 0;
+    arr3[0] = arr[0];
+    for(int i =0; i<n; i++){
+            if(arr[i] != arr[i+1]){
+                arr3[maa] = arr[i+1];
+                maa += 1;
+            }
+        }
+    for(int i = 0; i<n-1; i++){
+        for(int j = i+1; j<n; j++){
+            if(arr[0] == arr[n-1])
+            {
+                arr2[0] = n-1;
+            }
+            if(arr[i] == arr[j]){
+                arr2[vanshu] += 1;
+            }
+            else{
+                vanshu += 1;
+                arr2[vanshu] = 1;
+                i = j;
+            }
+        }
+    }
+    for(int i = 0; i<n; i++){
+        printf("%d\n", fame[i]);
+    }
     return 0;
 }
+    Loading Code...
