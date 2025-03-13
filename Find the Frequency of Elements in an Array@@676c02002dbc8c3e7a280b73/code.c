@@ -35,8 +35,9 @@ int main(){
     }
     printf("\n");
     int a = sizeof(num)/ sizeof(num[0]);
-    for(int i = 0; i<a; i++){
-        printf("%d", num[i]);
+    printf("%d", a);
+    // for(int i = 0; i<a; i++){
+    //     printf("%d", num[i]);
     }
     return 0;
 }
