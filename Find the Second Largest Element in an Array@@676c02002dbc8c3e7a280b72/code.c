@@ -14,6 +14,6 @@ int main(){
             arr[i+1] = ujjwal;
         } 
     }
-    printf("%d", arr(0));
+    printf("%d", arr[0]);
     return 0;
 }
