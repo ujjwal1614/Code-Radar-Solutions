@@ -25,10 +25,12 @@ int main() {
         }
     }
     int scam[n];
+    int scamcount = 0;
     for(int i = 0; i < n; i++) {
         if(freq[i] > 0) {
             for(int j = 0; j < freq[i]; j++) {
-                scam[i] = arr[i];
+                scam[scamcount] = arr[i];
+                scamcount += 1;
             }
         }
     }
