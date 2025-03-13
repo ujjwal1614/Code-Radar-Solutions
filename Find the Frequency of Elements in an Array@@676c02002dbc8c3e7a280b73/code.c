@@ -30,10 +30,10 @@ int main(){
     int maa = 0;
     int vanshu = 0;
     for(int i =0; i<n; i++){
-        arr3[maa] = arr[i];
-        printf("%d", &arr[3]);
+        printf("%d", &arr[maa]);
         for(int j = i+1; j<n; j++){
             if(arr[i] != arr[j]){
+                arr3[maa] = arr[i];
                 i = j;
                 maa += 1;
             }
