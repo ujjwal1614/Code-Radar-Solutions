@@ -29,16 +29,13 @@ int main(){
     arr2[0] = 1;
     int maa = 0;
     int vanshu = 0;
+    arr3[0] = arr[0];
     for(int i =0; i<n; i++){
-        for(int j = i+1; j<n; j++){
-            if(arr[i] != arr[j]){
-                arr3[maa] = arr[i];
-                printf("%d ", &arr3[maa]);
-                i = j;
+            if(arr[i] != arr[i+1]){
+                arr3[maa] = arr[i+1];
                 maa += 1;
             }
         }
-    }
     // for(int i = 0; i<n-1; i++){
     //     for(int j = i+1; j<n; j++){
     //         if(arr[0] == arr[n-1])
@@ -55,9 +52,9 @@ int main(){
     //         }
     //     }
     // }
-    // for(int i = 0; i<num; i++){
-    //     printf("%d\n", arr3[num - i - 1]);
-    // }
+    for(int i = 0; i<num; i++){
+        printf("%d\n", arr3[num - i - 1]);
+    }
     // for(int i = 0; i<num; i++){
     //     printf("%d %d\n", arr3[i], arr2[i]);
     // }
