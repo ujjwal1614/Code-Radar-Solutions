@@ -13,7 +13,7 @@ for(int i = 0; i<n; i++){
 }
 for(int i = 0; i<n; i++)
 {
-    printf("%d\n", myarr[i]);
+    printf("%d ", myarr[i]);
 }
 }
 int main()
