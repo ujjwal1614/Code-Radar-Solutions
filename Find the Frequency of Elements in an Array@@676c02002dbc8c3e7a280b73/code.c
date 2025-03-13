@@ -40,7 +40,7 @@ int main(){
         printf("%d", arr[i]);
     }
     printf("\n");
-    for(int i = 0; i<a; i++){
+    for(int i = 0; i<num; i++){
         printf("%d", arr2[i]);
     }
     return 0;
