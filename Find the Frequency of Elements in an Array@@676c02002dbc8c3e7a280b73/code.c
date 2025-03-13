@@ -17,32 +17,32 @@ int main(){
             }
         }
     }
-    // int num = 1;
-    // for(int i = 0; i<n-1; i++)
-    // {
-    //     if(arr[i] != arr[i+1]){
-    //         num += 1;
-    //     }
-    // }
-    // int arr2[num];
-    // arr2[0] = 1;
-    // for(int i = 0; i<n-1; i++){
-    //     for(int j = i+1; j<n; j++){
-    //         if(arr[i] == arr[j]){
-    //             arr2[i] += 1;
-    //         }
-    //         else{
-    //             arr2[i+1] = 1;
-    //             i = j;
-    //         }
-    //     }
-    // }
+    int num = 1;
+    for(int i = 0; i<n-1; i++)
+    {
+        if(arr[i] != arr[i+1]){
+            num += 1;
+        }
+    }
+    int arr2[num];
+    arr2[0] = 1;
+    for(int i = 0; i<n-1; i++){
+        for(int j = i+1; j<n; j++){
+            if(arr[i] == arr[j]){
+                arr2[i] += 1;
+            }
+            else{
+                arr2[i+1] = 1;
+                i = j;
+            }
+        }
+    }
     for(int i = 0; i<n; i++){
         printf("%d ", arr[i]);
     }
-    // printf("\n");
-    // for(int i = 0; i<num; i++){
-    //     printf("%d ", arr2[i]);
-    // }
-    // return 0;
+    printf("\n");
+    for(int i = 0; i<num; i++){
+        printf("%d ", arr2[i]);
+    }
+    return 0;
 }
