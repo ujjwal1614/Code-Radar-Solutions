@@ -55,7 +55,7 @@ int main(){
         }
     }
     for(int i = 0; i<num; i++){
-        printf("%d\n", arr3[i]);
+        printf("%d\n", arr3[num - i - 1]);
     }
     // for(int i = 0; i<num; i++){
     //     printf("%d %d\n", arr3[i], arr2[i]);
