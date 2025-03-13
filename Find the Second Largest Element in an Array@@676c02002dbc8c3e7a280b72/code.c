@@ -8,12 +8,12 @@ int main(){
     }
     int ujjwal;
     for(int i = 0; i<n; i++){
-        if(arr[i] < arr[i+1]){
+        if(arr[i] > arr[i+1]){
             arr[i] = ujjwal;
             arr[i] = arr[i+1];
             arr[i+1] = ujjwal;
         } 
     }
-    printf("%d", arr[0]);
+    printf("%d", arr[n-2]);
     return 0;
 }
