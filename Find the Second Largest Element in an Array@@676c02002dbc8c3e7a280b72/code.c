@@ -16,14 +16,18 @@ int main(){
         }
     }
     }
+    int count = 1;
     for(int i = 0; i<n; i++){
         for(int j = 1; j<n; j++){
             if(arr[0] == arr[j]){
-                printf("-1");
+                count += 1;
                 return 0;
             }
         }
-        if(arr[i]>0){
+        if(count == n){
+            printf("-1");
+        }
+        else if(arr[i]>0){
         printf("%d ", arr[n-2]);
         return 0;
         }
