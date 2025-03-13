@@ -37,7 +37,7 @@ int main() {
     int num = 1;
     for(int i = 0; i<n-1; i++)
     {
-        if(arr[i] != arr[i+1]){
+        if(scam[i] != scam[i+1]){
             num += 1;
         }
     }
@@ -48,18 +48,18 @@ int main() {
     int vanshu = 0;
     arr3[0] = arr[0];
     for(int i =0; i<n; i++){
-            if(arr[i] != arr[i+1]){
-                arr3[maa] = arr[i+1];
+            if(scam[i] != scam[i+1]){
+                arr3[maa] = scam[i+1];
                 maa += 1;
             }
         }
     for(int i = 0; i<n-1; i++){
         for(int j = i+1; j<n; j++){
-            if(arr[0] == arr[n-1])
+            if(scam[0] == scam[n-1])
             {
                 arr2[0] = n-1;
             }
-            if(arr[i] == arr[j]){
+            if(arr[i] == scam[j]){
                 arr2[vanshu] += 1;
             }
             else{
