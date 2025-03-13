@@ -31,6 +31,7 @@ int main(){
     int vanshu = 0;
     for(int i =0; i<n; i++){
         arr3[maa] = arr[i];
+        printf("%d", &arr[3]);
         for(int j = i+1; j<n; j++){
             if(arr[i] != arr[j]){
                 i = j;
@@ -54,9 +55,9 @@ int main(){
     //         }
     //     }
     // }
-    for(int i = 0; i<num; i++){
-        printf("%d\n", arr3[num - i - 1]);
-    }
+    // for(int i = 0; i<num; i++){
+    //     printf("%d\n", arr3[num - i - 1]);
+    // }
     // for(int i = 0; i<num; i++){
     //     printf("%d %d\n", arr3[i], arr2[i]);
     // }
