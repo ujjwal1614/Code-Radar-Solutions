@@ -52,8 +52,8 @@ int main(){
             }
         }
     }
-    for(int i = 0; i<n; i++){
-        printf("%d\n", fame[i]);
+    for(int i = 0; i<num; i++){
+        printf("%d %d\n", arr3[i], arr2[i]);
     }
     return 0;
 }
