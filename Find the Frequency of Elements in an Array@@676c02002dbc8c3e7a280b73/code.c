@@ -1,59 +1,45 @@
 #include<stdio.h>
 
-int main(){
+int main() {
     int n;
     scanf("%d", &n);
     int arr[n];
-    for(int i = 0; i< n ; i++){
+    for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int ujjwal;
-    for(int i = 0; i < n-1; i++){
-        for(int j = i+1; j<n; j++){
-            if(arr[i] > arr[j]){
-                ujjwal = arr[i];
-                arr[i] = arr[j];
-                arr[j] = ujjwal;
+
+    // Frequency array to store the count of each element
+    int freq[n];
+    for(int i = 0; i < n; i++) {
+        freq[i] = 0;  // Initialize frequency array
+    }
+
+    // Count the frequency of each element in arr[]
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < i; j++) {
+            if(arr[i] == arr[j]) {
+                freq[i] = -1;  // Mark this element as already processed
+                break;
+            }
+        }
+        if(freq[i] != -1) {
+            for(int j = 0; j < n; j++) {
+                if(arr[i] == arr[j]) {
+                    freq[i]++;
+                }
             }
         }
     }
-     int num = 1;
-    for(int i = 0; i<n-1; i++)
-    {
-        if(arr[i] != arr[i+1]){
-            num += 1;
-        }
-    }
-    int arr2[num];
-    int arr3[num];
-    arr2[0] = 1;
-    int maa = 1;
-    int vanshu = 0;
-    arr3[0] = arr[0];
-    for(int i =0; i<n; i++){
-            if(arr[i] != arr[i+1]){
-                arr3[maa] = arr[i+1];
-                maa += 1;
-            }
-        }
-    for(int i = 0; i<n-1; i++){
-        for(int j = i+1; j<n; j++){
-            if(arr[0] == arr[n-1])
-            {
-                arr2[0] = n-1;
-            }
-            if(arr[i] == arr[j]){
-                arr2[vanshu] += 1;
-            }
-            else{
-                vanshu += 1;
-                arr2[vanshu] = 1;
-                i = j;
+
+    // Print the grouped numbers based on their frequency
+    for(int i = 0; i < n; i++) {
+        if(freq[i] != -1) {
+            // Print the number 'freq[i]' times based on its frequency
+            for(int j = 0; j < freq[i]; j++) {
+                printf("%d ", arr[i]);
             }
         }
     }
-    for(int i = 0; i<num; i++){
-        printf("%d %d\n", arr3[i], arr2[i]);
-    }
+
     return 0;
 }
