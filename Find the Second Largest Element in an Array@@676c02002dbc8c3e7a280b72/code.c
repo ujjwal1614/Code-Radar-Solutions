@@ -18,6 +18,7 @@ int main(){
         for(int j = 0; j<n; j++){
             if(arr[i] != arr[j]){
                 printf("%d", arr[n-2]);
+                return 0;
             }
             else{
                 printf("-1");
