@@ -13,11 +13,13 @@ int main(){
             arr[i] = ujjwal;
             arr[i] = arr[j];
             arr[j] = ujjwal;
-        } 
+        }
     }
     }
-    for(int i = 0; i<n; i++){
-        printf("%d ", arr[i]);     
+        if(arr[i]>0){
+        printf("%d ", arr[n-2]);}
+        else{
+        printf("%d ", arr[1]);}    
     }
     
     return 0;
