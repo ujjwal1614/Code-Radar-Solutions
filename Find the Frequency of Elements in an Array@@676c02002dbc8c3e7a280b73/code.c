@@ -53,7 +53,7 @@ int main(){
         }
     }
     for(int i = 0; i<num; i++){
-        printf("%d %d\n", arr3[i], arr2[i]);
+        printf("%d %d\n", arr3[n - i - 1], arr2[i]);
     }
     return 0;
 }
