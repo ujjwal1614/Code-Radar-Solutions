@@ -31,7 +31,7 @@ int main(){
         for(int j = i+1; j<n; j++){
             if(arr[0] == arr[n-1])
             {
-                arr2[0] = n;
+                arr2[0] = n-1;
             }
             if(arr[i] == arr[j]){
                 arr2[vanshu] += 1;
