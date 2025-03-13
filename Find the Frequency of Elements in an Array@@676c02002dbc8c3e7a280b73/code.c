@@ -29,9 +29,16 @@ int main(){
     arr2[0] = 1;
     int maa = 0;
     int vanshu = 0;
-    for(int i = 0; i<n-1; i++){
+    for(int i =0; i<n; i++){
         arr3[maa] = arr[i];
-        maa += 1;
+        for(int j = i+1; j<n; j++){
+            if(arr[i] != arr[j]){
+                i = j;
+                maa += 1;
+            }
+        }
+    }
+    for(int i = 0; i<n-1; i++){
         for(int j = i+1; j<n; j++){
             if(arr[0] == arr[n-1])
             {
