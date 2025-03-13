@@ -24,18 +24,18 @@ int main(){
                 return 0;
             }
         }
-        if(count == n){
-            printf("-1");
-            return 0;
-        }
-        else if(arr[i]>0){
-        printf("%d ", arr[n-2]);
-        return 0;
-        }
-        else{
-        printf("%d ", arr[1]);
-        return 0;
-        } 
     }
+    if(count == n){
+        printf("-1");
+        return 0;
+    }
+    else if(arr[i]>0){
+        printf("%d ", arr[n-2]);
+    return 0;
+    }
+    else{
+        printf("%d ", arr[1]);
+    return 0;
+    } 
     return 0;
 }
