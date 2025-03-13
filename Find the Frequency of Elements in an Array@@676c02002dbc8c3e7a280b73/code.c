@@ -24,24 +24,24 @@ int main(){
             num += 1;
         }
     }
-    // for(int i = 0; i<n-1; i++){
-    //     for(int j = i+1; j<n; j++){
-    //         if(arr[i] == arr[j]){
-    //             num[i] += 1;
-    //         }
-    //         else{
-    //             num[i+1] = 1;
-    //             i = j;
-    //         }
-    //     }
-    // }
-    // for(int i = 0; i<n; i++){
-    //     printf("%d", arr[i]);
-    // }
+    int arr2[num];
+    for(int i = 0; i<n-1; i++){
+        for(int j = i+1; j<n; j++){
+            if(arr[i] == arr[j]){
+                arr2[i] += 1;
+            }
+            else{
+                arr2[i+1] = 1;
+                i = j;
+            }
+        }
+    }
+    for(int i = 0; i<n; i++){
+        printf("%d", arr[i]);
+    }
     printf("\n");
-    printf("%d", num);
-    // for(int i = 0; i<a; i++){
-    //     printf("%d", num[i]);
-    // }
+    for(int i = 0; i<a; i++){
+        printf("%d", arr2[i]);
+    }
     return 0;
 }
