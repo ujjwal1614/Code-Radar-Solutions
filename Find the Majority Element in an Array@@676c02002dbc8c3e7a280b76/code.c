@@ -19,8 +19,8 @@ int main(){
                     count += 1;
                 }
             }
-            freq[i] = count;
         }
+        freq[i] = count;
     }
     for(int i = 0; i<n; i++){
         printf("%d", freq[i]);
