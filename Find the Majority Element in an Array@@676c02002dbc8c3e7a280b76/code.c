@@ -32,8 +32,12 @@ int main() {
             }
         }
     }
+    int maxindex = 0;
     for(int i = 0; i<n; i++){
-        printf("%d ", freq[i]);
+        if(freq[i] > freq[maxindex]){
+            maxindex = i;
+        }
     }
+    printf("%d", arr[max]);
     return 0;
 }
