@@ -22,16 +22,6 @@ int main() {
             freq[i] = count;
         }
     }
-    int ujjwal;
-    for(int i = 0; i<n-1; i++){
-        for(int j = i+1; j<n; j++){
-            if(freq[i] < freq[j]){
-                ujjwal = freq[i];
-                freq[i] = freq[j];
-                freq[j] = ujjwal;
-            }
-        }
-    }
     int maxindex = 0;
     for(int i = 0; i<n; i++){
         if(freq[i] > freq[maxindex]){
