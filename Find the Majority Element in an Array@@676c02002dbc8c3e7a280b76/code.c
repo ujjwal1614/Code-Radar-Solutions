@@ -38,7 +38,12 @@ int main() {
             maxindex = i;
         }
     }
-    int a = sizeof(freq)/sizeof(freq[0]);
+    int a = 0;
+    for(int i = 0; i<n; i++){
+        if(freq[i] > 0){
+            a += 1;
+        }
+    }
     if(a == 1){
         printf("%d", freq[0]);
         return 0;
@@ -55,8 +60,6 @@ int main() {
         }
     }
     }
-    printf("-1\n");
-    for(int i =0; i<n; i++){
-    printf("%d", freq[i]);}
+    printf("-1");
     return 0;
 }
