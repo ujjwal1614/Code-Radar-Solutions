@@ -22,8 +22,18 @@ int main() {
             freq[i] = count;
         }
     }
-    for(int i = 0; i < n; i++){
-    printf("%d ", freq[i]);
+    int ujjwal;
+    for(int i = 0; i<n-1; i++){
+        for(int j = i+1; j<n; j++){
+            if(freq[i] < freq[j]){
+                ujjwal = freq[i];
+                freq[i] = freq[j];
+                freq[j] = ujjwal;
+            }
+        }
+    }
+    for(int i = 0; i<n; i++){
+        printf("%d", freq[i]);
     }
     return 0;
 }
