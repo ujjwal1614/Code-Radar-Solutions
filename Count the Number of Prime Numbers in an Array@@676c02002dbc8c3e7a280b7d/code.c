@@ -14,7 +14,7 @@ int main(){
         for(int j = 2; j<arr[i]; j++){
             if(arr[i] % j == 0){
                 freq[i] = -1;
-                return 0;
+                break;
             }
         }
         freq[i] = 1;
