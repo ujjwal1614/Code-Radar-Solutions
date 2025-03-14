@@ -21,7 +21,7 @@ int main(){
         freq[i] = sum;
     }
     for(int i = 0; i<n; i++){
-        printf("%d", freq[i]);
+        printf("%d ", freq[i]);
     }
     return 0;
 }
