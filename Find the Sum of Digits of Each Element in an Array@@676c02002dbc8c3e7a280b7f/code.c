@@ -7,14 +7,21 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int remainder;
-    int ujjwal, sum = 0;
+    int ujjwal, freq[n];
+    for(int i =0; i<n; i++){
+        freq[i] = 0;
+    }
     for(int i = 0; i<n; i++){
+        int sum = 0;
         while(arr[i] != 0){
         ujjwal = arr[i] % 10;
         sum += ujjwal;
         arr[i] /= 10;
         }
+        freq[i] = sum;
     }
-    printf("%d", sum);
+    for(int i = 0; i<n; i++){
+        printf("%d", freq[i]);
+    }
     return 0;
 }
