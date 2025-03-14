@@ -13,7 +13,8 @@ for(int i = 0; i<n; i++){
     }
     }
     else{
-        r = r - n;
+        while(r>n){
+        r = r - n;}
         if(i<r)
     {
         myarr[i] = st[n-r+i];
