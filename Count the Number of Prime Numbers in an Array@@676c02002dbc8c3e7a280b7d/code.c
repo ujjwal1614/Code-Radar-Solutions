@@ -24,7 +24,6 @@ int main(){
             count += 1;
         }
     }
-    for(int i = 0; i<n; i++){
-    printf("%d", freq[i]);}
+    printf("%d", count);
     return 0;
 }
