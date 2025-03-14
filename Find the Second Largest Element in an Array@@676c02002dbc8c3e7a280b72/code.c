@@ -31,7 +31,7 @@ int main() {
             scamcount += 1;
         }
     }
-    if(scamcount = 1){
+    if(scamcount == 1){
         printf("-1");
         return 0;
     }
