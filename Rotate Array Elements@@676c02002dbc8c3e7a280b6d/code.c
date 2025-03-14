@@ -25,7 +25,7 @@ for(int i = 0; i<n; i++){
 }
 for(int i = 0; i<n; i++)
 {
-    printf("%d ", myarr[i]);
+    printf("%d\n", myarr[i]);
 }
 }
 int main()
