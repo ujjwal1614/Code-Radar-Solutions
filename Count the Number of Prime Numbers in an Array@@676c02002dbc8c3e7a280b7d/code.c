@@ -16,9 +16,11 @@ int main(){
                 freq[i] = -1;
                 break;
             }
+            else if(arr[i] > 1){
             if(arr[i] % j == 0){
                 freq[i] = -1;
                 break;
+            }
             }
         }
     }
