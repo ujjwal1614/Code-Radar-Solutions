@@ -33,6 +33,7 @@ int main() {
     }
     if(scamcount = 1){
         printf("-1");
+        return 0;
     }
     else if(arr[0]>0){
         printf("%d ", scam[scamcount-2]);
