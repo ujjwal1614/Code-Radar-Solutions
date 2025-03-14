@@ -14,14 +14,13 @@ int main(){
         for(int j = 2; j<arr[i]; j++){
             if(arr[i] % j == 0){
                 freq[i] = -1;
-                printf("%d\n", freq[i]);
                 break;
             }
         }
     }
     int count = 0;
     for(int i = 0; i<n; i++){
-        if(freq[i] = 0){
+        if(freq[i] == 0){
             count += 1;
         }
     }
