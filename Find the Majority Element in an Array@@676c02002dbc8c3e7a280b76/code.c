@@ -40,11 +40,13 @@ int main() {
     }
     for(int i = 0; i<n; i++){
         for(int j = 0; j<n; j++){
+            if(freq[i] > 0){
             if(freq[0] != freq[i]){
                 printf("%d", arr[maxindex]);
                 return 0;
             }
         }
+    }
     }
     printf("-1");
     return 0;
