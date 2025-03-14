@@ -38,6 +38,6 @@ int main() {
             maxindex = i;
         }
     }
-    printf("%d", arr[max]);
+    printf("%d", arr[maxindex]);
     return 0;
 }
