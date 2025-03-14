@@ -11,19 +11,17 @@ int main(){
         freq[i] = 0;
     }
     for(int i = 0; i<n; i++){
-        for(int j = 2; j<arr[i]; j++){
-            if(arr[i] == 0 || arr[i] == 1){
+        if(arr[i] < 2){
                 freq[i] = -1;
-                break;
             }
-            else if(arr[i] > 1){
-            if(arr[i] % j == 0){
-                freq[i] = -1;
-                break;
-            }
+        else{
+            for(int j = 2; j<arr[i]; j++){
+                if(arr[i] % j == 0){
+                    freq[i] = -1;
+                    break;
+                }
             }
         }
-    }
     int count = 0;
     for(int i = 0; i<n; i++){
         if(freq[i] == 0){
