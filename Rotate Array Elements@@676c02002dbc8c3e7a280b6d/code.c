@@ -3,6 +3,7 @@ void rotate(int st[], int n, int r)
 {
 int myarr[n];
 for(int i = 0; i<n; i++){
+    if(r<=n){
     if(i<r)
     {
         myarr[i] = st[n-r+i];
@@ -10,10 +11,21 @@ for(int i = 0; i<n; i++){
     else{
         myarr[i] = st[i-r];
     }
+    }
+    else{
+        r = r - n;
+        if(i<r)
+    {
+        myarr[i] = st[n-r+i];
+    }
+    else{
+        myarr[i] = st[i-r];
+    }
+    }
 }
 for(int i = 0; i<n; i++)
 {
-    printf("%d\n", myarr[i]);
+    printf("%d ", myarr[i]);
 }
 }
 int main()
