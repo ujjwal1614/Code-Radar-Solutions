@@ -45,7 +45,7 @@ int main() {
         }
     }
     if(a == 1){
-        printf("%d", freq[0]);
+        printf("%d", arr[0]);
         return 0;
     }
     for(int i = 0; i<n; i++){
