@@ -55,6 +55,8 @@ int main() {
         }
     }
     }
-    printf("-1");
+    printf("-1\n");
+    for(int i =0; i<n; i++){
+    printf("%d", freq[i]);}
     return 0;
 }
