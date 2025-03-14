@@ -24,7 +24,7 @@ int main(){
         if(freq[i] >0){
         printf("%d ", freq[i]);}
         else{
-            printf("%d ",  (2 * freq[i])/freq[i]);
+            printf("%d ",  -freq[i]);
         }
     }
     return 0;
