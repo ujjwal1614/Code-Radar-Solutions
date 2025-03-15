@@ -6,17 +6,18 @@ int main() {
     for(int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-    int ujjwal;
     for(int i = 1; i<n-1; i++){
         for(int j = i+1; j<n; j++){
             if(arr[i] < arr[j]){
                 arr[i-1] = arr[j];
+                printf("%d", arr[i-1]);
             }
         }
     }
     arr[n-1] = -1;
-    for(int i = 0; i<n; i++){
-        printf("%d ", arr[i]);
-    }
+    // for(int i = 0; i<n; i++){
+    //     printf("%d ", arr[i]);
+    // }
+    // 
     return 0;
 }
