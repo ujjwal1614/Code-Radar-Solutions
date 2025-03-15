@@ -32,6 +32,7 @@ int main() {
             else{
                 maximum = j;
                 i = j;
+                break;
             }
         }
     }
