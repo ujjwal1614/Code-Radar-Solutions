@@ -9,8 +9,8 @@ int main() {
     int ujjwal;
     for(int i = 0; i<n-1; i++){
         for(int j = i+1; j<n; j++){
-            if(arr[i] < arr[j]){
-                arr[i] = arr[j];
+            if(arr[i+1] < arr[j+1]){
+                arr[i] = arr[j+1];
             }
         }
     }
