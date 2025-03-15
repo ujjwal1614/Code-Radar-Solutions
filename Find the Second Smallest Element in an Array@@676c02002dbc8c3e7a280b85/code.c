@@ -42,7 +42,7 @@ int main() {
     //     }
     // }
     printf("%d\n", scamcount);
-    for(int i = 0; i<n; i++){
+    for(int i = 0; i<scamcount; i++){
         printf("%d ", scam[i]);
     }
     return 0;
