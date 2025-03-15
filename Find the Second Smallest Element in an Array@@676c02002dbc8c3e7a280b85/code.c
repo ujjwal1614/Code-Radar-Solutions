@@ -43,7 +43,7 @@ int main() {
     // }
     printf("%d\n", scamcount);
     for(int i = 0; i<n; i++){
-        printf("%d ", scam[i]);
+        printf("%d ", freq[i]);
     }
     return 0;
 }
