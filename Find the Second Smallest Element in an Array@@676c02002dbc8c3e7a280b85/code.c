@@ -29,19 +29,18 @@ int main() {
             scam[i] = freq[i];
         }
     }
-    int ujjwal;
-    for(int i = 0; i<scamcount-1; i++){
-        for(int j = i+1; j<scamcount; j++){
-            if(scam[i] > scam[j]){
-                ujjwal = scam[i];
-                scam[i] =scam[j];
-                scam[j] = ujjwal;
-            }
-        }
-    }
-    printf("%d", scamcount);
-    // for(int i = 0; i<n; i++){
-    //     printf("%d ", freq[i]);
+    // int ujjwal;
+    // for(int i = 0; i<scamcount-1; i++){
+    //     for(int j = i+1; j<scamcount; j++){
+    //         if(scam[i] > scam[j]){
+    //             ujjwal = scam[i];
+    //             scam[i] =scam[j];
+    //             scam[j] = ujjwal;
+    //         }
+    //     }
     // }
+    for(int i = 0; i<n; i++){
+        printf("%d ", scam[i]);
+    }
     return 0;
 }
