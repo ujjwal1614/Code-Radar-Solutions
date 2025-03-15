@@ -31,16 +31,16 @@ int main() {
             count += 1;
         }
     }
-    // int ujjwal;
-    // for(int i = 0; i<scamcount-1; i++){
-    //     for(int j = i+1; j<scamcount; j++){
-    //         if(scam[i] > scam[j]){
-    //             ujjwal = scam[i];
-    //             scam[i] =scam[j];
-    //             scam[j] = ujjwal;
-    //         }
-    //     }
-    // }
+    int ujjwal;
+    for(int i = 0; i<scamcount-1; i++){
+        for(int j = i+1; j<scamcount; j++){
+            if(scam[i] > scam[j]){
+                ujjwal = scam[i];
+                scam[i] =scam[j];
+                scam[j] = ujjwal;
+            }
+        }
+    }
     printf("%d\n", scamcount);
     for(int i = 0; i<scamcount; i++){
         printf("%d ", scam[i]);
