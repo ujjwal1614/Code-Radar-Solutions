@@ -31,17 +31,20 @@ int main() {
             scamcount += 1;
         }
     }
-    if(scamcount == 1){
-        printf("-1");
-        return 0;
+    // if(scamcount == 1){
+    //     printf("-1");
+    //     return 0;
+    // }
+    // else if(arr[0]>0){
+    //     printf("%d ", scam[1]);
+    // return 0;
+    // }
+    // else{
+    //     printf("%d ", scam[scamcount - 2]);
+    // return 0;
+    // } 
+    for(int i = 0; i<scamcount; i++){
+        printf("%d", scam[i]);
     }
-    else if(arr[0]>0){
-        printf("%d ", scam[1]);
-    return 0;
-    }
-    else{
-        printf("%d ", scam[scamcount - 2]);
-    return 0;
-    } 
     return 0;
 }
