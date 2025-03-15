@@ -8,7 +8,11 @@ int main(){
     }
     for(int i = 1; i<n-1; i++){
         for(int j = i+1; j<n; j++){
-            printf("%d", arr[i-1]);
+            if(arr[i] < arr[j]){
+                arr[i-1] = arr[j];
+                printf("%d ", arr[i-1]);
+            }
+            
         }
     }
 }
