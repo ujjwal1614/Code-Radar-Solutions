@@ -24,7 +24,7 @@ int main() {
         }
     }
     int scam[scamcount];
-    int count = 1;
+    int count = 0;
     for(int i = 0; i<n; i++){
         if(freq[i] != -1){
             scam[count] = freq[i];
