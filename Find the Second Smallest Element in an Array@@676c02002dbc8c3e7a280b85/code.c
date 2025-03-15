@@ -44,7 +44,7 @@ int main() {
     // return 0;
     // } 
     for(int i = 0; i<scamcount; i++){
-        printf("%d", scam[i]);
+        printf("%d ", scam[i]);
     }
     return 0;
 }
