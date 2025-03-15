@@ -24,9 +24,11 @@ int main() {
         }
     }
     int scam[scamcount];
+    int count = 1;
     for(int i = 0; i<n; i++){
         if(freq[i] != -1){
-            scam[i] = freq[i];
+            scam[count] = freq[i];
+            count += 1;
         }
     }
     // int ujjwal;
