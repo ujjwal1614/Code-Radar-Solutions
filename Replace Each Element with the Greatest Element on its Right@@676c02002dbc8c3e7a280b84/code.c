@@ -1,4 +1,4 @@
 #include<stdio.h>
 int main(){
-    pirntf("heelo");
+    printf("heelo");
 }
