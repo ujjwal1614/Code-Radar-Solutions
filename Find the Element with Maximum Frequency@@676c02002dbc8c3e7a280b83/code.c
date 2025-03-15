@@ -23,16 +23,17 @@ int main() {
             freq[i] = count;
         }
     }
-    int ujjwal;
-    for(int i =0; i<n-1; i++){
-        for(int j = i+1; j<n; j++){
-            if(arr[i] > arr[j]){
-                ujjwal = arr[i];
-                arr[i] = arr[j];
-                arr[j] = ujjwal;
-            } 
+    int maximum = i;
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n; j++){
+            if(arr[i] >= arr[j]){
+                maximum = i;
+            }
+            else{
+                maximum = j;
+            }
         }
     }
-    printf("%d", arr[n-1]);
+    printf("%d", maximum);
     return 0;
 }
