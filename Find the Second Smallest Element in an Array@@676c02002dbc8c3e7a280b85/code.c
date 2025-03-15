@@ -39,6 +39,8 @@ int main() {
             }
         }
     }
-    printf("%d", scam[1]);
+    for(int i = 0; i<n; i++){
+        printf("%d", scam[i]);
+    }
     return 0;
 }
