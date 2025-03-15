@@ -34,6 +34,9 @@ int main() {
             }
         }
     }
-    printf("%d", maximum);
+    for(int i = 0; i<n; i++){
+        printf("%d ", freq[i]);
+    }
+    printf("   %d", maximum);
     return 0;
 }
