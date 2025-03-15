@@ -12,6 +12,9 @@ int main() {
             if(arr[i] < arr[j]){
                 arr[i] = arr[j];
             }
+            else(arr[i+1] < arr[j+1]){
+                arr[i] = arr[j+1];
+            }
         }
     }
     arr[n-1] = -1;
