@@ -41,12 +41,15 @@ int main() {
             }
         }
     }
+    for(int i = 0; i<n; i++){
+        printf("%d ", scam[i]);
+    }
     for(int i = 0; i<scamcount; i++){
         if(scam[i] == scam[i+1]){
             printf("-1");
         }
         else{
-            printf("%d", scam[1]);
+            printf("   %d", scam[1]);
             return 0;
         }
     }
