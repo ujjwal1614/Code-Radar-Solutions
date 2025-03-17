@@ -9,13 +9,13 @@ int main(){
     }
     for(int i = 0; i<n; i++){
         int reversed = 0;
+        int ujjwal = arr[i];
         while(arr[i] != 0){
             remainder = arr[i] % 10;
             reversed = reversed*10 + remainder ;
             arr[i] = arr[i]/10;
         }
-        printf("%d  %d    ", reversed, arr[i]);
-        if(arr[i] == reversed){
+        if(ujjwal == reversed){
             count =count + 1;
         }
     }
