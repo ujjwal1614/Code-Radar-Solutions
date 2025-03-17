@@ -15,9 +15,11 @@ int main(){
             reversed = reversed*10 + remainder ;
             arr[i] = arr[i]/10;
         }
+
+        if(ujjwal >= 0){
         if(ujjwal == reversed){
             count =count + 1;
-        }
+        }}
     }
     printf("%d", count);
     return 0;
