@@ -44,14 +44,12 @@ int main() {
     for(int i = 0; i<scamcount; i++){
         printf("%d ", scam[i]);
     }
-    for(int i = 0; i<scamcount; i++){
-        if(scam[i] == scam[i+1]){
-            printf("-1");
-        }
-        else{
-            printf("   %d", scam[1]);
-            return 0;
-        }
+    if(scam[0] == scam[1] || scamcount == 1){
+        printf("-1");
     }
+    else{
+        printf("   %d", scam[1]);
+        return 0;
+        }
     return 0;
 }
