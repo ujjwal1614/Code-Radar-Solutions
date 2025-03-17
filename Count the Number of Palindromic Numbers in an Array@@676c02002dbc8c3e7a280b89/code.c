@@ -1,5 +1,5 @@
 #include<stdio.h>
-int palindrome(int n, int arr[n], int remainder, int reversed){
+int palindrome(int n, int arr[n], int remainder, int reversed, int count){
     for(int i = 0; i<n; i++){
         while(arr[i] != 0){
             remainder = arr[i] % 10;
