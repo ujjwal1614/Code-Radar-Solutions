@@ -41,14 +41,11 @@ int main() {
             }
         }
     }
-    for(int i = 0; i<scamcount; i++){
-        printf("%d ", scam[i]);
-    }
     if(scam[0] == scam[1] || scamcount == 1){
         printf("-1");
     }
     else{
-        printf("   %d", scam[1]);
+        printf("%d", scam[1]);
         return 0;
         }
     return 0;
