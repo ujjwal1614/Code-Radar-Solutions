@@ -4,7 +4,7 @@ int palindrome(int n, int arr[n], int remainder, int reversed, int count){
         while(arr[i] != 0){
             remainder = arr[i] % 10;
             reversed = reversed*10 + remainder ;
-            arr[i] = arr[i]/ 10;
+            arr[i] = arr[i]/10;
         }
         if(arr[i] == reversed){
             count += 1;
