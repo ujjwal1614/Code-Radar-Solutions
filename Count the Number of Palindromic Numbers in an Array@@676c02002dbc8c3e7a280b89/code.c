@@ -19,7 +19,7 @@ int main(){
     for(int i = 0; i<n; i++){
         scanf("%d", &arr[i]);
     }
-    palindrome(int n, int arr[n], int remainder, int reversed, int count);
+    palindrome(n, arr[n], remainder, reversed, count);
     printf("%d", count);
     return 0;
 }
