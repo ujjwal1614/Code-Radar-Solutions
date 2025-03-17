@@ -14,11 +14,10 @@ int main(){
             reversed = reversed*10 + remainder ;
             arr[i] = arr[i]/10;
         }
-        printf("%d ", reversed);
-        // if(arr[i] == reversed){
-        //     count =count + 1;
-        // }
+        if(arr[i] == reversed){
+            count =count + 1;
+        }
     }
-    // printf("%d", count);
+    printf("%d", count);
     return 0;
 }
