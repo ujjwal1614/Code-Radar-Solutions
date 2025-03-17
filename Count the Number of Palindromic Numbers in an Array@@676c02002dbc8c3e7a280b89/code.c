@@ -12,7 +12,7 @@ int palindrome(int n, int arr[n], int remainder, int reversed, int count){
     }
 }
 int main(){
-    int n, reversed = 0, count = 0;;
+    int n, reversed = 0, count = 0;
     int remainder = 0;
     scanf("%d", &n);
     int arr[n];
