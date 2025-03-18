@@ -35,6 +35,7 @@ int main()
     }
     if(count == 0){
         printf("-1");
+        return 0;
     }
     printf("%d", arr2[0]);
         return 0;
