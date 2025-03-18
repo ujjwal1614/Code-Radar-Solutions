@@ -33,8 +33,6 @@ int main()
             }
         }
     }
-    for(int i = 0; i< ujjwal; i++){
-        printf("%d ", arr2[i]);
-    }
+    printf("%d", arr2[0]);
         return 0;
 }
