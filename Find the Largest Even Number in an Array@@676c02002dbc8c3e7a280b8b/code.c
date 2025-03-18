@@ -8,7 +8,7 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    count = 0, ujjwal = 0;
+    int count = 0, ujjwal = 0;
     
     for(int i=0; i<n; i++){
         if(arr[i] % 2 == 0){
@@ -24,7 +24,7 @@ int main()
         }
     }
     for(int i = 0; i< ujjwal; i++){
-        printf("%d", arr2[i]);
+        printf("%d ", arr2[i]);
     }
         return 0;
 }
