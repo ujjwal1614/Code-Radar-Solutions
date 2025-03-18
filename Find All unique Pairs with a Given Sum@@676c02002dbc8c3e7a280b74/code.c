@@ -24,7 +24,7 @@ int main()
         }
     }
     for(int i = 0; i<count; i++){
-        printf("%d", arr2[i]);
+        printf("%d ", arr2[i]);
         // for(int j = i+1; j<n; j++){
         //     if(arr2[i] + arr2[j] == k){
         //         printf("%d %d\n", arr2[i], arr2[j]);
