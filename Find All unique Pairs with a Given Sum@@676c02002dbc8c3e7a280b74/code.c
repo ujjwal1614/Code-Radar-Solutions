@@ -17,7 +17,7 @@ int main()
     }
     int ujjwal = 1;
     int arr2[count];
-    arr2[0] = arr[i];
+    arr2[0] = arr[0];
     for(int i = 0; i<n; i++){
         if(arr[i] != arr[i+1]){
             arr2[ujjwal] = arr[i+1];
