@@ -23,8 +23,16 @@ int main()
             count += 1;
         }
     }
-    for(int i = 0; i< ujjwal; i++){
-        printf("%d ", arr2[i]);
+    int divanshu;
+    for(int i = 0; i< ujjwal-1; i++){
+        for(int j = i+1; j<ujjwal; j++){
+            if(arr2[i] < arr2[j]){
+                divanshu = arr2[i];
+                arr2[i] = arr2[j];
+                arr2[j] = divanshu;
+            }
+        }
     }
+    printf("%d", arr2[1]);
         return 0;
 }
