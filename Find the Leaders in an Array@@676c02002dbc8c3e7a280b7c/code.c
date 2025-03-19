@@ -6,14 +6,17 @@ int main(){
     int arr[n];
     for(int i = 0; i< n ; i++){
         scanf("%d", &arr[i]);
-    }
+
     for(int i = 0; i<n-1; i++){
+        itn count = 0;
         for(int j = i+1; j<n; j++){
-            if(arr[i] < arr[j]){
-                break;
+            if(arr[i] > arr[j]){
+                count++;
             }
         }
+        if(count == n - i - 1){
         printf("%d ", arr[i]);
+        }
     }
     printf("%d", arr[n-1]);
     if(n == 1){
