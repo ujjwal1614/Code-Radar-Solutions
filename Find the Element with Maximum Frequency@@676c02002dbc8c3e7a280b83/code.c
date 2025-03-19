@@ -23,24 +23,17 @@ int main() {
             freq[i] = count;
         }
     }
-    int maximum = 0;
-    for(int i = 0; i<n-1; i++){
-        for(int j = i+1; j<n; j++){
-            if(freq[i] < freq[j]){
-                maximum = j;
-                i = j;
-                break;
-            }
-            else{
-                maximum = i;
-            }
+    int maxindex = 0;
+    for(int i = 0; i<n; i++){
+        if(freq[i] > freq[maxindex]){
+            maxindex = i;
         }
     }
     
     for(int i = 0; i<n; i++){
         printf("%d ", freq[i]);
     }
-    printf("    %d", maximum);
+    printf("    %d", maxindex);
 
     return 0;
 }
