@@ -38,9 +38,9 @@ int main() {
     }
     
     for(int i = 0; i<n; i++){
-        printf("%d\n", freq[i]);
+        printf("%d  ", freq[i]);
     }
-    printf("%d", arr[maximum]);
+    printf("    %d", arr[maximum]);
 
     return 0;
 }
