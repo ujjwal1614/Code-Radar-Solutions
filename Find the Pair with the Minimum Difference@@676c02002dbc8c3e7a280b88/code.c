@@ -18,13 +18,16 @@ int main(){
             
         }
     }
-    int min = arr[1] - arr[0];
+    int min;
     for(int i = 1; i<n-1; i++){
-        if((arr[i+1] - arr[i]) < min){
+        if((arr[i+1] - arr[i]) < arr[1] - arr[0]){
             min = i;
         }
     }
-    printf("%d %d", arr[min], arr[min + 1]);
+    for(int i = 0; i<n; i++){
+        printf("%d", arr[i]);
+    }
+    // printf("%d %d", arr[min], arr[min + 1]);
 
     
     return 0;
