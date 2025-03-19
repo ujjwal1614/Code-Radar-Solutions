@@ -18,9 +18,9 @@ int main(){
             }
         }
         // printf("%d", ujjwal);
-        if(ujjwal == n-1){
+    if(ujjwal == n-1){
         printf("%d ", arr[i]);
-        }
+    }
     }
     }
     printf("%d", arr[n-1]);
