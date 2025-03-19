@@ -19,7 +19,7 @@ int main(){
             }
         }
         if(count == n - i - 1){
-        // printf("%d ", arr[i]);
+        printf("%d ", arr[i]);
         }
     }
     }
