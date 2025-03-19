@@ -9,11 +9,11 @@ int main(){
     int ujjwal;
     for(int i = 1; i<n-1; i++){
         for(int j = i+1; j<n; j++){
-            if(arr[i] < arr[j]){
-                ujjwal = arr[j];
+            if(arr[i] > arr[j]){
+                ujjwal = arr[i];
             }
             else{
-                ujjwal = arr[i+1];
+                ujjwal = arr[j];
             }
         }
         arr[i-1] = ujjwal;
