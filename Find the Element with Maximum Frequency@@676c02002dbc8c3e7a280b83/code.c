@@ -26,19 +26,21 @@ int main() {
     int maximum = 0;
     for(int i = 0; i<n-1; i++){
         for(int j = i+1; j<n; j++){
-            if(freq[i] >= freq[j]){
-                maximum = i;
-            }
-            else{
+            if(freq[i] < freq[j]){
                 maximum = j;
                 i = j;
                 break;
             }
+            else{
+                maximum = i;
+            }
         }
     }
+    
     for(int i = 0; i<n; i++){
-        printf("%d ", freq[i]);
+        printf("%d\n", freq[i]);
     }
-    printf("   %d", maximum);
+    printf("%d", arr[maximum]);
+
     return 0;
 }
