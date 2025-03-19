@@ -13,7 +13,7 @@ int main(){
                 ujjwal; = arr[j];
             }
             else{
-                ujjwal; = arr[i+1];
+                ujjwal = arr[i+1];
             }
         }
         arr[i-1] = ujjwal;
