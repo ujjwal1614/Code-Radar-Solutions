@@ -14,11 +14,10 @@ int main(){
                 break;
             }
             else if(arr[i] > arr[j]){
-                count += 1;
-                printf("%d ", count);
+                count = j;
             }
         }
-        if(count == n - i - 1){
+        if(count == n-1){
         printf("%d ", arr[i]);
         }
     }
