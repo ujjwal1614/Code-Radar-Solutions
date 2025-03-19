@@ -24,6 +24,10 @@ int main(){
             min = i;
         }
     }
+    if(n == 1){
+        printf("-1");
+        return 0;
+    }
     printf("%d %d", arr[min], arr[min + 1]);
 
     
