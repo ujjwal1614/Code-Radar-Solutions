@@ -48,6 +48,6 @@ int main() {
         }
     }
     }
-    printf("-1");
+    printf("%d", arr[0]);
     return 0;
 }
