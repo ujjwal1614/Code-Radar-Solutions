@@ -20,12 +20,12 @@ int main(){
     }
     int min;
     for(int i = 1; i<n-1; i++){
-        if((arr[i+1] - arr[i]) < arr[1] - arr[0]){
+        if((arr[i+1] - arr[i]) < (arr[1] - arr[0])){
             min = i;
         }
     }
     for(int i = 0; i<n; i++){
-        printf("%d", arr[i]);
+        printf("%d ", arr[i]);
     }
     // printf("%d %d", arr[min], arr[min + 1]);
 
