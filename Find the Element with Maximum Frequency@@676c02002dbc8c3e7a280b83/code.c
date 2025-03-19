@@ -29,11 +29,7 @@ int main() {
             maxindex = i;
         }
     }
-    
-    for(int i = 0; i<n; i++){
-        printf("%d ", freq[i]);
-    }
-    printf("    %d", maxindex);
+    printf("%d", arr[maxindex]);
 
     return 0;
 }
