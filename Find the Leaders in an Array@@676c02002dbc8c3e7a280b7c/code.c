@@ -18,6 +18,7 @@ int main(){
         printf("%d ", arr[i]);
         }
     }
+    }
     printf("%d", arr[n-1]);
     if(n == 1){
         printf("%d", arr[0]);
