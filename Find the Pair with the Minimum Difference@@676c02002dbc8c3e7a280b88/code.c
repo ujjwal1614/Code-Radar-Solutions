@@ -24,7 +24,7 @@ int main(){
             min = i;
         }
     }
-    printf("%d %d", arr[i], arr[i+1]);
+    printf("%d %d", arr[min], arr[min + 1]);
 
     
     return 0;
