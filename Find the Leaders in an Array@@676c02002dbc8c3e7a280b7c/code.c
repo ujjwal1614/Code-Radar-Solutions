@@ -17,7 +17,7 @@ int main(){
             }
         }
         if(ujjwal == n-1){
-            pritnf("%d ", arr[ujjwal]);
+            printf("%d ", arr[ujjwal]);
         }
     }
     }
