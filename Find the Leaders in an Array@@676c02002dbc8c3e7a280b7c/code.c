@@ -6,24 +6,26 @@ int main(){
     int arr[n];
     for(int i = 0; i< n ; i++){
         scanf("%d", &arr[i]);
-    int ujjwal;
+
     for(int i = 0; i<n-1; i++){
+        int ujjwal = 0;
         for(int j = i+1; j<n; j++){
             if(arr[i] < arr[j]){
                 break;
             }
-            else{
+            else if(arr[i] > arr[j]){
                 ujjwal = j;
             }
         }
-        if(ujjwal == n-1){
-            printf("%d ", arr[ujjwal]);
+        // printf("%d", ujjwal);
+        if(count == n-1){
+        printf("%d ", arr[i]);
         }
     }
     }
-    printf("%d", arr[n-1]);
-    if(n == 1){
-        printf("%d", arr[0]);
-    }
+    // printf("%d", arr[n-1]);
+    // if(n == 1){
+    //     printf("%d", arr[0]);
+    // }
     return 0;
 }
