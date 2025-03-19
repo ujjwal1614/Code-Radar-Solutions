@@ -14,7 +14,7 @@ int main(){
             if(arr[i] < arr[j]){
                 break;
             }
-            else if(arr[i] > arr[j]){
+            else if(arr[i] >= arr[j]){
                 ujjwal = j;
             }
         }
@@ -24,7 +24,7 @@ int main(){
     }
     }
     }
-    // printf("%d", arr[n-1]);
+    printf("%d", arr[n-1]);
     if(n == 1){
         printf("%d", arr[0]);
     }
