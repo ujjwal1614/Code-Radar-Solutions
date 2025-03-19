@@ -8,6 +8,7 @@ int main(){
         scanf("%d", &arr[i]);
     if(n == 1){
         printf("%d", arr[0]);
+        return 0;
     }
     for(int i = 0; i<n-1; i++){
         int ujjwal = 0;
