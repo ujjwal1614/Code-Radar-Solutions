@@ -17,7 +17,7 @@ int main(){
                 count = j;
             }
         }
-        printf("%d", count);
+        printf("%d ", count);
         // if(count == n-1){
         // printf("%d ", arr[i]);
         // }
