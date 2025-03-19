@@ -7,7 +7,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int ujjwal;
-    for(int i = 1; i<n-1; i++){
+    for(int i = 1; i<n; i++){
         for(int j = i+1; j<n; j++){
             if(arr[i] > arr[j]){
                 ujjwal = arr[i];
