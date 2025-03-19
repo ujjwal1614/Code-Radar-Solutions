@@ -16,8 +16,8 @@ int main(){
                 ujjwal = arr[j];
             }
         }
-        // arr[i-1] = ujjwal;
-        printf("%d ", ujjwal);
+        arr[i-1] = ujjwal;
+        // printf("%d ", ujjwal);
     }
     arr[n-1] = -1;
     for(int i = 0; i<n; i++){
