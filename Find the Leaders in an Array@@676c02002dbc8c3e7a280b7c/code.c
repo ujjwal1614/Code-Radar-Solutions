@@ -17,9 +17,10 @@ int main(){
                 count = j;
             }
         }
-        if(count == n-1){
-        printf("%d ", arr[i]);
-        }
+        printf("%d", count);
+        // if(count == n-1){
+        // printf("%d ", arr[i]);
+        // }
     }
     }
     // printf("%d", arr[n-1]);
