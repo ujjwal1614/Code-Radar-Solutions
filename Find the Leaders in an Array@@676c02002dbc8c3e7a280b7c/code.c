@@ -12,6 +12,7 @@ int main(){
         for(int j = i+1; j<n; j++){
             if(arr[i] > arr[j]){
                 count += 1;
+                printf("%d ", count);
             }
         }
         if(count == n - i - 1){
@@ -19,9 +20,9 @@ int main(){
         }
     }
     }
-    printf("%d", arr[n-1]);
+    // printf("%d", arr[n-1]);
     if(n == 1){
-        printf("%d", arr[0]);
+        // printf("%d", arr[0]);
     }
     return 0;
 }
