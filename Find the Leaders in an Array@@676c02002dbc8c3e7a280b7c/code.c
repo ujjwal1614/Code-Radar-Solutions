@@ -6,7 +6,7 @@ int main(){
     int arr[n];
     for(int i = 0; i< n ; i++){
         scanf("%d", &arr[i]);
-
+    }
     for(int i = 0; i<n-1; i++){
         int ujjwal = 0;
         for(int j = i+1; j<n; j++){
@@ -20,7 +20,6 @@ int main(){
         // printf("%d", ujjwal);
     if(ujjwal == n-1){
         printf("%d ", arr[i]);
-    }
     }
     }
     printf("%d", arr[n-1]);
