@@ -1,20 +1,15 @@
 #include<stdio.h>
-int isPrime(int a){
-    int k;
-    scanf("%d", &a);
-    if(a<=1)
-    {
-        return 0;
-    }
-        for(int u = 2; u<a; u++)
-        {
-            if(a % u == 0)
-            {
-                return 0;
-            }
-            else
-            {
-                return 1;
-            }
+int isPrime(int num){
+if(num <= 1){
+    return 0;
+}
+else{
+    for(int i = 2; i<num; i++){
+        if(num % i == 0){
+            printf("0");
+            return 0;
         }
+    }
+    printf("1");
+}
 }
