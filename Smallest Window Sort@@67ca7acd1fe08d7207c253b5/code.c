@@ -19,12 +19,12 @@ int findUnsortedSubarray(int arr[], int n){
             count++;
         }
     }
-    for(int i = 0; i<n; i++){
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-    for(int i = 0; i<n; i++){
-        printf("%d ", myarr[i]);
-    }
+    // for(int i = 0; i<n; i++){
+    //     printf("%d ", arr[i]);
+    // }
+    // printf("\n");
+    // for(int i = 0; i<n; i++){
+    //     printf("%d ", myarr[i]);
+    // }
     printf("%d\n", count);
 }
