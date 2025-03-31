@@ -9,6 +9,6 @@ else{
             return 0;
         }
     }
-    printf("1");
+    return 1;
 }
 }
