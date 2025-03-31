@@ -14,10 +14,17 @@ int findUnsortedSubarray(int arr[], int n){
         }
     }
     int count = 0;
+    // for(int i = 0; i<n; i++){
+    //     if(arr[i] != myarr[i]){
+    //         count++;
+    //     }
+    // }
     for(int i = 0; i<n; i++){
-        if(arr[i] != myarr[i]){
-            count++;
-        }
+        printf("%d ", arr[i]);
     }
-    printf("%d\n", count);
+    printf("\n");
+    for(int i = 0; i<n; i++){
+        printf("%d ", myarr[i]);
+    }
+    // printf("%d\n", count);
 }
